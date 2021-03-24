@@ -1,4 +1,4 @@
-## Social Computing HW4
+## "Social Computing" HW4 by Springs Lau @ BUAA
 
 # Implementation of Schelling Model Using Python and Streamlit
 
@@ -22,5 +22,4 @@ streamlit run .\app.py
 
 # More...
 
-Feel free to report issues to my **GitHub**, about this program the site is:
-
+Feel free to report issues to my **GitHub**@SprLau, the program is on this [*site*](https://github.com/SprLau/schelling-model-implementation).

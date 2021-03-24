@@ -1,14 +1,3 @@
-'''
-title           : app.py
-description     : Implementation of schelling segregation model using Python and Streamlit. 
-author          : Adil Moujahid
-date_created    : 20200509
-date_modified   : 20200509
-version         : 0.1
-usage           : streamlit run app.py
-python_version  : 3.7.6
-'''
-
 import random
 import numpy as np
 import streamlit as st
@@ -16,6 +5,11 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
+#############################################################################################
+#       Conducted by Springs Lau @ School of Computer Science and Engineering, BUAA         #
+#       Mar 24th, 2021, First Edition                                                       #
+#       MyEmail: lau@buaa.edu.cn    MyStudentID@BUAA: 19373345 Zhaoxun Liu                  #
+#############################################################################################
 
 class Schelling:
     
@@ -63,11 +57,17 @@ class Schelling:
                     count += 1
         return similarity_ratio / count
 
+print("")
+print('#############################################################################################')
+print('#       Conducted by Springs Lau @ School of Computer Science and Engineering, BUAA         #')
+print('#       Mar 24th, 2021, First Edition                                                       #')
+print('#       MyEmail: lau@buaa.edu.cn    MyStudentID@BUAA: 19373345 Zhaoxun Liu                  #')
+print('#############################################################################################')
+print("")
 
- 
 #Streamlit App
 
-st.title("Schelling's Model of Segregation")
+st.title("Schelling's Model, Implemented by Springs Lau @ \"Social Computing\", SCSE BUAA")
 
 population_size = st.sidebar.slider("Population Size", 500, 10000, 2500)
 empty_ratio = st.sidebar.slider("Empty Houses Ratio", 0., 1., .2)
@@ -122,7 +122,3 @@ if st.sidebar.button('Run Simulation'):
         city_plot.pyplot(plt)
         plt.close("all")
         progress_bar.progress((i+1.)/n_iterations)
-
-
-
-
